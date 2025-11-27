@@ -144,3 +144,49 @@ body {
       -1.8em -1.8em 0 0em #00ff00;
   }
 }
+
+/* Card animation */
+.card-shadow::after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.card-shadow:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  transform-origin: bottom;
+  transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.card-shadow:hover .card-image {
+  transform: scale(1.2);
+}
+
+.card-info {
+  transform: translateY(68%);
+  transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.card-shadow:hover .card-info {
+  transform: translateY(0);
+}
+
+.hide-info {
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.4s;
+  transition-delay: 0.3s;
+}
+
+.card-shadow:hover .hide-info {
+  opacity: 1;
+  transform: translateY(0);
+}

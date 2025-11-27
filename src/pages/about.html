@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - UrbanStyle</title>
+
+    <!-- CDN TAILWIND -->
+    <link href="../output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Font Google: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <div id="website-content">
+      <!-- NAVBAR  -->
+      <nav
+        class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="shrink-0 flex items-center gap-2">
+              <span class="text-3xl">👕</span>
+              <a
+                href="../../index.html"
+                class="text-2xl font-bold tracking-wide text-gray-900 hover:text-blue-600 transition">
+                UrbanStyle
+              </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div
+              class="hidden md:flex space-x-8 items-center text-sm font-medium uppercase tracking-wide">
+              <a
+                href="../../index.html"
+                class="text-gray-500 hover:text-blue-600 transition px-1 py-1"
+                >Beranda</a
+              >
+              <a
+                href="product.html"
+                class="text-gray-500 hover:text-blue-600 transition px-1 py-1"
+                >Produk</a
+              >
+              <a
+                href="about.html"
+                class="text-blue-600 border-b-2 border-blue-600 px-1 py-1"
+                >About</a
+              >
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-4">
+              <button
+                class="relative text-gray-600 hover:text-blue-600 transition">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span
+                  class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm"
+                  >2</span
+                >
+              </button>
+
+              <!-- Mobile Menu Toggle -->
+              <input type="checkbox" id="menu-toggle" class="hidden peer" />
+              <label
+                for="menu-toggle"
+                class="md:hidden p-2 text-gray-600 cursor-pointer hover:text-blue-600">
+                <svg
+                  class="h-7 w-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </label>
+
+              <!-- Mobile Menu Dropdown -->
+              <div
+                class="absolute top-20 left-0 w-full bg-white shadow-lg md:hidden peer-checked:block hidden">
+                <div
+                  class="flex flex-col p-6 space-y-4 uppercase text-sm font-bold text-center">
+                  <a
+                    href="../../index.html"
+                    class="text-gray-600 hover:text-blue-600 py-2"
+                    >Beranda</a
+                  >
+                  <a
+                    href="product.html"
+                    class="text-gray-600 hover:text-blue-600 py-2"
+                    >Produk</a
+                  >
+                  <a
+                    href="about.html"
+                    class="text-blue-600 bg-blue-50 py-2 rounded-lg"
+                    >About</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="grow py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-12">
+          <!-- Header Section -->
+          <div class="text-center mb-16">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+              Tim Kreatif Kami
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Bertemu dengan visioner di balik UrbanStyle yang berdedikasi
+              menghadirkan fashion terbaik
+            </p>
+          </div>
+
+          <!-- Card Animation Container -->
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center gap-10">
+            <!-- Card 1 -->
+            <div
+              class="card-shadow relative h-[300px] w-[270px] overflow-hidden rounded-xl">
+              <img
+                src="https://picsum.photos/id/556/1080/1200"
+                alt="Ahmad Rizki"
+                class="card-image w-full h-[90%] object-cover" />
+              <div
+                class="card-info absolute bottom-0 w-full h-[75%] flex flex-col p-[18px] bg-[rgb(225,225,225)] z-[2] rounded-xl">
+                <strong class="text-base uppercase text-gray-900"
+                  >Kiral Nevan</strong
+                >
+                <span class="text-sm opacity-70 mt-1 font-medium"
+                  >Teknik Informatika</span
+                >
+                <hr class="my-4 border-none border-b border-black/20" />
+                <div class="hide-info text-sm leading-relaxed">
+                  <span class="text-gray-800">Job desk </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2-->
+            <div
+              class="card-shadow relative h-[300px] w-[270px] overflow-hidden rounded-xl">
+              <img
+                src="https://picsum.photos/id/553/1080/1200"
+                alt="Siti Nurhaliza"
+                class="card-image w-full h-[90%] object-cover" />
+              <div
+                class="card-info absolute bottom-0 w-full h-[75%] flex flex-col p-[18px] bg-[rgb(225,225,225)] z-[2] rounded-xl">
+                <strong class="text-base uppercase text-gray-900"
+                  >Lentera Maestro A</strong
+                >
+                <span class="text-sm opacity-70 mt-1 font-medium">Fisika</span>
+                <hr class="my-4 border-none border-b border-black/20" />
+                <div class="hide-info text-sm leading-relaxed">
+                  <span class="text-gray-800">Job desk </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 - Budi Sugiarto -->
+            <div
+              class="card-shadow relative h-[300px] w-[270px] overflow-hidden rounded-xl">
+              <img
+                src="https://picsum.photos/id/552/1080/1200"
+                alt="Budi Santoso"
+                class="card-image w-full h-[90%] object-cover" />
+              <div
+                class="card-info absolute bottom-0 w-full h-[75%] flex flex-col p-[18px] bg-[rgb(225,225,225)] z-[2] rounded-xl">
+                <strong class="text-base uppercase text-gray-900"
+                  >Budi Sugiarto</strong
+                >
+                <span class="text-sm opacity-70 mt-1 font-medium"
+                  >Sistem Informasi</span
+                >
+                <hr class="my-4 border-none border-b border-black/20" />
+                <div class="hide-info text-sm leading-relaxed">
+                  <span class="text-gray-800">Job desk </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="bg-white text-gray-600 pt-12 pb-8 border-t border-gray-200 mt-12">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+              <h3
+                class="text-2xl font-bold flex items-center justify-center md:justify-start gap-2 text-gray-900">
+                <span>👕</span> UrbanStyle
+              </h3>
+              <p class="text-sm mt-2">Fashion terkini, harga terbaik.</p>
+            </div>
+
+            <div class="flex gap-6 text-sm font-medium">
+              <a href="about.html" class="hover:text-blue-600 transition"
+                >Tentang Kami</a
+              >
+              <a href="#" class="hover:text-blue-600 transition"
+                >Syarat & Ketentuan</a
+              >
+              <a href="#" class="hover:text-blue-600 transition"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="border-t border-gray-100 mt-8 pt-8 text-center text-xs text-gray-400">
+            &copy; 2025 UrbanStyle Kelompok 3. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
