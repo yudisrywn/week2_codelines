@@ -3,47 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
+    <title>UrbanStyle - Fashion Store</title>
+
+    <!-- CDN TAILWIND -->
     <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- Font Google: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .zoom-effect {
+        overflow: hidden;
+      }
+      .zoom-effect img {
+        transition: transform 0.5s ease;
+      }
+      .zoom-effect:hover img {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
-  <body class="bg-gray-50">
-    <!-- NAVBAR START -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <!-- Logo / Brand -->
-          <div class="flex-shrink-0">
+  <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <!-- NAVBAR  -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <div class="shrink-0 flex items-center gap-2">
+            <span class="text-3xl">👕</span>
             <a
               href="index.html"
-              class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
-              Shopping Cart
+              class="text-2xl font-bold tracking-wide text-gray-900 hover:text-blue-600 transition">
+              UrbanStyle
             </a>
           </div>
 
-          <div class="hidden md:flex space-x-8">
+          <!-- Desktop Menu -->
+          <div
+            class="hidden md:flex space-x-8 items-center text-sm font-medium uppercase tracking-wide">
             <a
               href="index.html"
-              class="text-gray-900 font-semibold border-b-2 border-blue-600 px-3 py-2 text-sm">
-              Beranda
-            </a>
+              class="text-blue-600 border-b-2 border-blue-600 px-1 py-1"
+              >Beranda</a
+            >
             <a
-              href="./src/pages/product.html"
-              class="text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-blue-600 px-3 py-2 text-sm transition-all">
-              Produk
-            </a>
+              href="product.html"
+              class="text-gray-500 hover:text-blue-600 transition px-1 py-1"
+              >Produk</a
+            >
             <a
-              href="./src/pages/home.html"
-              class="text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-blue-600 px-3 py-2 text-sm transition-all">
-              Abous us
-            </a>
+              href="about.html"
+              class="text-gray-500 hover:text-blue-600 transition px-1 py-1"
+              >About</a
+            >
           </div>
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
+
+          <!-- Icons -->
+          <div class="flex items-center gap-4">
             <button
-              id="mobile-menu-button"
-              class="text-gray-600 hover:text-gray-900 focus:outline-none">
+              class="relative text-gray-600 hover:text-blue-600 transition">
               <svg
-                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span
+                class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm"
+                >2</span
+              >
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <label
+              for="menu-toggle"
+              class="md:hidden p-2 text-gray-600 cursor-pointer hover:text-blue-600">
+              <svg
+                class="h-7 w-7"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24">
@@ -53,69 +101,78 @@
                   stroke-width="2"
                   d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
-            </button>
+            </label>
+
+            <div
+              class="hidden peer-checked:block absolute top-20 left-0 w-full bg-white border-t border-gray-200 shadow-xl md:hidden">
+              <div
+                class="flex flex-col p-6 space-y-4 uppercase text-sm font-bold text-center">
+                <a
+                  href="index.html"
+                  class="text-blue-600 bg-blue-50 py-2 rounded-lg"
+                  >Beranda</a
+                >
+                <a
+                  href="product.html"
+                  class="text-gray-600 hover:text-blue-600 py-2"
+                  >Produk</a
+                >
+                <a
+                  href="about.html"
+                  class="text-gray-600 hover:text-blue-600 py-2"
+                  >About</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </nav>
-    <!-- NAVBAR END -->
 
-    <!-- MAIN CONTENT START -->
-    
-    <!-- MAIN CONTENT END -->
+    <!-- Main Contenct -->
+    <main class="grow" id="main-content">
 
-    <!-- FOOTER START -->
-    <footer class="bg-gray-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Company Info -->
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white text-gray-600 pt-12 pb-8 border-t border-gray-200 mt-12">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
           <div>
-            <h3 class="text-xl font-bold mb-4">IT DEV KELOMPOK 3</h3>
-            <p class="text-gray-400 mb-4">
-              Membuat website modern dengan Tailwind CSS untuk tugas kelompok
-              minggu ke-2.
-            </p>
+            <h3
+              class="text-2xl font-bold flex items-center justify-center md:justify-start gap-2 text-gray-900">
+              <span>👕</span> UrbanStyle
+            </h3>
+            <p class="text-sm mt-2">Fashion terkini, harga terbaik.</p>
           </div>
 
-          <!-- Quick Links -->
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Menu</h3>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="index.html"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Beranda</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./src/pages/product.html"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Produk</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./src/pages/home.html"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >About</a
-                >
-              </li>
-            </ul>
+          <div class="flex gap-6 text-sm font-medium">
+            <a href="about.html" class="hover:text-blue-600 transition"
+              >Tentang Kami</a
+            >
+            <a href="#" class="hover:text-blue-600 transition"
+              >Syarat & Ketentuan</a
+            >
+            <a href="#" class="hover:text-blue-600 transition">Hubungi Kami</a>
           </div>
         </div>
 
-        <!--  Footer -->
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p class="text-gray-400">
-            &copy; 2025 IT DEV KELOMPOK 3.
-            Tugas Kelompok Minggu ke-2.
-          </p>
+        <div
+          class="border-t border-gray-100 mt-8 pt-8 text-center text-xs text-gray-400">
+          &copy; 2025 UrbanStyle Kelompok 3. All rights reserved.
         </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
   </body>
+
+  <script>
+      fetch('/src/pages/home.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('main-content').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading content:', error));
+    </script>
 </html>
