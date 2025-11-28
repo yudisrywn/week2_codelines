@@ -1,87 +1,275 @@
-<!-- 4. PRODUK TERBARU -->
-<section class="py-16 bg-gray-50">
-  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
-    
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-3">Produk Terbaru</h2>
-      <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - UrbanStyle</title>
+
+    <!-- TAILWIND -->
+    <link href="../output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Font Google: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <div id="website-content">
+      <!-- NAVBAR  -->
+      <nav
+        class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="shrink-0 flex items-center gap-2">
+              <span class="text-3xl">👕</span>
+              <a
+                href="../../index.html"
+                class="text-2xl font-bold tracking-wide text-gray-900 hover:text-blue-600 transition">
+                UrbanStyle
+              </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div
+              class="hidden md:flex space-x-8 items-center text-sm font-medium uppercase tracking-wide">
+              <a
+                href="../../index.html"
+                class="text-gray-500 hover:text-blue-600 transition px-1 py-1"
+                >Beranda</a
+              >
+              <a
+                href="product.html"
+                class="text-blue-600 hover:text-blue-600 transition px-1 py-1"
+                >Produk</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-500 px-1 py-1"
+                >About</a
+              >
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-4">
+              <button
+                class="relative text-gray-600 hover:text-blue-600 transition">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span
+                  class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm"
+                  >2</span
+                >
+              </button>
+
+              <!-- Mobile Menu Toggle -->
+              <input type="checkbox" id="menu-toggle" class="hidden peer" />
+              <label
+                for="menu-toggle"
+                class="md:hidden p-2 text-gray-600 cursor-pointer hover:text-blue-600">
+                <svg
+                  class="h-7 w-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </label>
+
+              <!-- Mobile Menu Dropdown -->
+              <div
+                class="absolute top-20 left-0 w-full bg-white shadow-lg md:hidden peer-checked:block hidden">
+                <div
+                  class="flex flex-col p-6 space-y-4 uppercase text-sm font-bold text-center">
+                  <a
+                    href="../../index.html"
+                    class="text-gray-600 hover:text-blue-600 py-2"
+                    >Beranda</a
+                  >
+                  <a
+                    href="product.html"
+                    class="text-gray-600 hover:text-blue-600 py-2"
+                    >Produk</a
+                  >
+                  <a
+                    href="about.html"
+                    class="text-blue-600 bg-blue-50 py-2 rounded-lg"
+                    >About</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="grow py-16">
+        <!-- 4. PRODUK TERBARU -->
+        <section class="py-16 bg-gray-50">
+          <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                Produk Terbaru
+              </h2>
+              <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <!-- Hoodie Street Black -->
+              <div
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition" />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-gray-900 text-lg">
+                    Hoodie Street Black
+                  </h3>
+                  <p class="text-gray-500 text-sm mb-3">Comfort premium</p>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-blue-600 text-lg"
+                      >Rp 249.000</span
+                    >
+                    <button
+                      class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Product -->
+              <div
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition" />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-gray-900 text-lg">
+                    Oversized Tee White
+                  </h3>
+                  <p class="text-gray-500 text-sm mb-3">Soft cotton</p>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-blue-600 text-lg"
+                      >Rp 149.000</span
+                    >
+                    <button
+                      class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Oversized Tee White -->
+              <div
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1593032457860-62f8e3cda7e3?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition" />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-gray-900 text-lg">
+                    Cargo Pants Olive
+                  </h3>
+                  <p class="text-gray-500 text-sm mb-3">Urban fit</p>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-blue-600 text-lg"
+                      >Rp 299.000</span
+                    >
+                    <button
+                      class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Denim Jacket Classic -->
+              <div
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition" />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-gray-900 text-lg">
+                    Denim Jacket Classic
+                  </h3>
+                  <p class="text-gray-500 text-sm mb-3">Vintage blue</p>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-blue-600 text-lg"
+                      >Rp 379.000</span
+                    >
+                    <button
+                      class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="bg-white text-gray-600 pt-12 pb-8 border-t border-gray-200 mt-12">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+              <h3
+                class="text-2xl font-bold flex items-center justify-center md:justify-start gap-2 text-gray-900">
+                <span>👕</span> UrbanStyle
+              </h3>
+              <p class="text-sm mt-2">Fashion terkini, harga terbaik.</p>
+            </div>
+
+            <div class="flex gap-6 text-sm font-medium">
+              <a href="about.html" class="hover:text-blue-600 transition"
+                >Tentang Kami</a
+              >
+              <a href="#" class="hover:text-blue-600 transition"
+                >Syarat & Ketentuan</a
+              >
+              <a href="#" class="hover:text-blue-600 transition"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="border-t border-gray-100 mt-8 pt-8 text-center text-xs text-gray-400">
+            &copy; 2025 UrbanStyle Kelompok 3. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
-      <!-- Hoodie Street Black -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
-        <div class="relative overflow-hidden rounded-t-2xl">
-          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" 
-               class="w-full h-64 object-cover group-hover:scale-110 transition" />
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 text-lg">Hoodie Street Black</h3>
-          <p class="text-gray-500 text-sm mb-3">Comfort premium</p>
-          <div class="flex justify-between items-center">
-            <span class="font-bold text-blue-600 text-lg">Rp 249.000</span>
-            <button class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card Product -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
-        <div class="relative overflow-hidden rounded-t-2xl">
-          <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80" 
-               class="w-full h-64 object-cover group-hover:scale-110 transition" />
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 text-lg">Oversized Tee White</h3>
-          <p class="text-gray-500 text-sm mb-3">Soft cotton</p>
-          <div class="flex justify-between items-center">
-            <span class="font-bold text-blue-600 text-lg">Rp 149.000</span>
-            <button class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Oversized Tee White -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
-        <div class="relative overflow-hidden rounded-t-2xl">
-          <img src="https://images.unsplash.com/photo-1593032457860-62f8e3cda7e3?auto=format&fit=crop&w=800&q=80"
-               class="w-full h-64 object-cover group-hover:scale-110 transition" />
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 text-lg">Cargo Pants Olive</h3>
-          <p class="text-gray-500 text-sm mb-3">Urban fit</p>
-          <div class="flex justify-between items-center">
-            <span class="font-bold text-blue-600 text-lg">Rp 299.000</span>
-            <button class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Denim Jacket Classic -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition group">
-        <div class="relative overflow-hidden rounded-t-2xl">
-          <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?auto=format&fit=crop&w=800&q=80"
-               class="w-full h-64 object-cover group-hover:scale-110 transition" />
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 text-lg">Denim Jacket Classic</h3>
-          <p class="text-gray-500 text-sm mb-3">Vintage blue</p>
-          <div class="flex justify-between items-center">
-            <span class="font-bold text-blue-600 text-lg">Rp 379.000</span>
-            <button class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Paste sini -->
+  </body>
+</html>
